@@ -7,18 +7,20 @@
  */
 
 /**
- * Description of Produto
+ * Description of Produtos
  *
  * @author refra
  */
-class Produto {
+class Produtos {
     private $id;
     private $nome;
     private $situacao;
     private $valor;
     private $categoria;
-    
-    function getId() {
+    private $marca;
+    private $produtos;
+}
+function getId() {
         return $this->id;
     }
 
@@ -37,7 +39,12 @@ class Produto {
     function getCategoria() {
         return $this->categoria;
     }
-
+    function getMarca() {
+        return $this->marca;
+    }    
+    function getProdutos() {
+        return $this->produtos;
+    }    
     function setId($id) {
         $this->id = $id;
     }
@@ -57,6 +64,11 @@ class Produto {
     function setCategoria($categoria) {
         $this->categoria = $categoria;
     }
+    function setMarca($marca) {
+        $this->marca = $marca;
+    }
+    function setProdutos($produtos) {
+        $this->produtos = $produtos;
+    }    
 
 
-}

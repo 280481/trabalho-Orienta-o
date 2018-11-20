@@ -9,7 +9,7 @@
 /**
  * Description of Categoria
  *
- * @author thiag
+ * @author refra
  */
 class Categoria {
     private $id;

@@ -53,11 +53,10 @@
                 ?>
 
                 <option <?php
-                if (
-                ($usuario->getEmpresa() instanceof Empresa) &&
-                ($usuario->getEmpresa()->getId() === $emp->getId() )
+                if 
+                (($usuario->getEmpresa() instanceof Empresa) && ( $usuario->getEmpresa()->getId() === $emp->getId() )):
 
-                ):
+                
                 ?>
                     selected="selected"
                     <?php

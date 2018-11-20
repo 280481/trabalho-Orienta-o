@@ -9,14 +9,14 @@
 /**
  * Description of ControleProduto
  *
- * @author thiag
+ * @author refra
  */
-class ControleProduto implements IPrivateTO { //iprivate to é umainterface vazia
+class ControleProduto implements IPrivateTO { 
     public function listaDeProduto() {
-        $dp = new DaoProduto(); // a variavel "dp" é DaoProduto
+        $dp = new DaoProduto(); 
         $produtos = $dp->listarTodos();
-        $v = new TGui("listaDeProduto"); ///cria a visão
-        $v->addDados("produtos", $produtos); //insere dados nela
+        $v = new TGui("listaDeProduto"); 
+        $v->addDados("produtos", $produtos); 
         $v->renderizar();
     }
     public function editar($id) {

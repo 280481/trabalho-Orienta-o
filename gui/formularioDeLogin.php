@@ -26,7 +26,7 @@
             $('#imgwrap').empty();
             $.post('<?= URL ?>login/get-thumb/', {user: login}, function (d) {
                 try {
-                    var name = './img/noimage.png';
+                    var name = './img/renato.jpg';
                     if (d.path !== null) {
                         name = d.path;
                     }

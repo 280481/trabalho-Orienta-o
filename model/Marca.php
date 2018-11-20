@@ -7,17 +7,19 @@
  */
 
 /**
- * Description of Empresa
+ * Description of Marca
  *
  * @author refra
  */
-class Empresa {
+class Marca {
     private $id;
     private $nome;
     private $situacao;
-    private $produtos;
-    
-    function getId() {
+    private $valor;
+    private $categoria;
+    private $marca;
+}
+function getId() {
         return $this->id;
     }
 
@@ -29,6 +31,16 @@ class Empresa {
         return $this->situacao;
     }
 
+    function getValor() {
+        return $this->valor;
+    }
+
+    function getCategoria() {
+        return $this->categoria;
+    }
+    function getMarca() {
+        return $this->marca;
+    }    
     function setId($id) {
         $this->id = $id;
     }
@@ -41,8 +53,17 @@ class Empresa {
         $this->situacao = $situacao;
     }
 
-    public function getProdutos() {
-       return $this->produtos;
+    function setValor($valor) {
+        $this->valor = $valor;
     }
 
-}
+    function setCategoria($categoria) {
+        $this->categoria = $categoria;
+    }
+    function setMarca($marca) {
+        $this->marca = $marca;
+    }    
+
+
+
+

@@ -9,7 +9,7 @@
 /**
  * Description of DaoCategoria
  *
- * @author thiag
+ * @author refra
  */
 class DaoCategoria implements IDao {
     

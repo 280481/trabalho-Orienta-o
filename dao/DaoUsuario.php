@@ -38,9 +38,9 @@ class DaoUsuario implements IDao {
             echo $exc->getMessage();
         }
         $usu = $sth->fetchObject("Usuario");
-        $demp = new DaoEmpresa();
-        if ($usu->idempresa) {
-            $emp = $demp->listar($usu->idempresa);
+        $de = new DaoEmpresa();
+        if ($usu->id_empresa) {
+            $emp = $de->listar($usu->id_empresa);
             $usu->setEmpresa($emp);
         }
         return $usu;

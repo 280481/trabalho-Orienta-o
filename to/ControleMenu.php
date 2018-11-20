@@ -9,7 +9,7 @@
 /**
  * Description of ControleMenu
  *
- * @author thiag
+ * @author refra
  */
 class ControleMenu implements IPrivateTO {
     

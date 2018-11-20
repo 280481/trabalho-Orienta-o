@@ -9,7 +9,7 @@
 /**
  * Description of DaoEmpresa
  *
- * @author thiag
+ * @author refra
  */
 class DaoEmpresa implements IDao {
     

@@ -9,12 +9,12 @@
 /**
  * Description of DaoProduto
  *
- * @author thiag
+ * @author refra
  */
 class DaoProduto implements IDao {
     
     
-    public function excluir($p) { //variavel "p" é produto
+    public function excluir($p) { 
         $sql = "delete FROM produto where id=:ID";
         $conexao = Conexao::getConexao();
         $sth = $conexao->prepare($sql);

@@ -9,15 +9,15 @@
 /**
  * Description of ControleCategoria
  *
- * @author thiag
+ * @author refra
  */
 
-class ControleCategoria implements IPrivateTO { //iprivate to é umainterface vazia
+class ControleCategoria implements IPrivateTO {
     public function listaDeCategoria() {
         $dc = new DaoCategoria();
         $categorias = $dc->listarTodos();
-        $v = new TGui("listaDeCategoria"); ///cria a visão
-        $v->addDados("categorias", $categorias); //insere dados nela
+        $v = new TGui("listaDeCategoria"); 
+        $v->addDados("categorias", $categorias); 
         $v->renderizar();
     }
     public function editar($id) {
